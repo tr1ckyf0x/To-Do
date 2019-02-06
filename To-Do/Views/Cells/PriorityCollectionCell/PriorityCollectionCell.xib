@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PriorityCell" id="gTV-IL-0wX" customClass="PriorityCollectionCell" customModule="To_Do" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="52"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="52"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AmZ-54-ElN" customClass="DesignableView" customModule="To_Do" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="52"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Dib-dk-JSz">
+                                <rect key="frame" x="8" y="16" width="119" height="20"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W62-mX-xa8" customClass="PriorityView" customModule="To_Do" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="10" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="10" id="ykc-c1-wVX"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Urgently" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mco-vD-EqY">
+                                        <rect key="frame" x="26" y="0.0" width="93" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="oFc-Hg-67n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="SecondaryTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" image="ic_tick" translatesAutoresizingMaskIntoConstraints="NO" id="bqm-gw-8WQ">
+                                        <rect key="frame" x="119" y="0.0" width="13" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="13" id="6iE-wF-hTd"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dib-dk-JSz" firstAttribute="leading" secondItem="AmZ-54-ElN" secondAttribute="leading" constant="8" id="0gr-ct-cPA"/>
+                            <constraint firstAttribute="trailing" secondItem="Dib-dk-JSz" secondAttribute="trailing" priority="750" constant="8" id="SdQ-vc-MFK"/>
+                            <constraint firstAttribute="bottom" secondItem="Dib-dk-JSz" secondAttribute="bottom" priority="750" constant="16" id="iXx-gx-Rnv"/>
+                            <constraint firstItem="Dib-dk-JSz" firstAttribute="top" secondItem="AmZ-54-ElN" secondAttribute="top" constant="16" id="pZh-QL-EAS"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" name="ButtonShadowColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="AmZ-54-ElN" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="E8i-86-lwC"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="AmZ-54-ElN" secondAttribute="trailing" id="JZ5-yA-EOo"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="AmZ-54-ElN" secondAttribute="bottom" id="XRc-zt-Zn7"/>
+                <constraint firstItem="AmZ-54-ElN" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="zdb-gZ-KzV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="135" height="158"/>
+            <connections>
+                <outlet property="checkmarkImageView" destination="bqm-gw-8WQ" id="RYW-kv-GNa"/>
+                <outlet property="priorityTitleLabel" destination="mco-vD-EqY" id="tbK-Vh-Dqd"/>
+                <outlet property="priorityView" destination="W62-mX-xa8" id="xEN-Kq-uz4"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="165.51724137931035"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_tick" width="13" height="9"/>
+        <namedColor name="ButtonShadowColor">
+            <color red="0.39215686274509803" green="0.57647058823529407" blue="0.6588235294117647" alpha="0.15999999642372131" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryTextColor">
+            <color red="0.73333333333333328" green="0.73333333333333328" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

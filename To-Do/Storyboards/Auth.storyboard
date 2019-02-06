@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="66y-MM-cZk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="Ckp-bP-lhd">
+            <objects>
+                <viewController id="66y-MM-cZk" customClass="AuthViewController" customModule="To_Do" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q57-uQ-gin">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AuthScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="G6o-X5-dvs">
+                                <rect key="frame" x="160" y="60" width="55" height="51.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="QL7-ul-Ecr"/>
+                                    <constraint firstAttribute="width" secondItem="G6o-X5-dvs" secondAttribute="height" multiplier="55.26:51.63" id="nEl-25-Eii"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q7g-VK-wtg" userLabel="AuthTypeView">
+                                <rect key="frame" x="78.5" y="147.5" width="218" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDf-7J-Am9" customClass="DesignableButton" customModule="To_Do" customModuleProvider="target">
+                                        <rect key="frame" x="124" y="0.0" width="94" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" name="SecondaryTextColor"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" name="AccentDarkColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" name="ButtonShadowColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEa-fI-erS" customClass="DesignableButton" customModule="To_Do" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="94" id="0MW-p5-dk3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" name="SecondaryTextColor"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" name="AccentDarkColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" name="ButtonShadowColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hEa-fI-erS" firstAttribute="leading" secondItem="Q7g-VK-wtg" secondAttribute="leading" id="3sm-WU-hBh"/>
+                                    <constraint firstItem="hEa-fI-erS" firstAttribute="top" secondItem="Q7g-VK-wtg" secondAttribute="top" id="Tjr-a8-55g"/>
+                                    <constraint firstAttribute="bottom" secondItem="hEa-fI-erS" secondAttribute="bottom" id="ZJJ-oF-WQT"/>
+                                    <constraint firstItem="SDf-7J-Am9" firstAttribute="top" secondItem="Q7g-VK-wtg" secondAttribute="top" id="bCx-Ki-7iJ"/>
+                                    <constraint firstItem="SDf-7J-Am9" firstAttribute="leading" secondItem="hEa-fI-erS" secondAttribute="trailing" constant="30" id="c1D-gg-IxC"/>
+                                    <constraint firstAttribute="bottom" secondItem="SDf-7J-Am9" secondAttribute="bottom" id="cIK-dk-X3a"/>
+                                    <constraint firstAttribute="trailing" secondItem="SDf-7J-Am9" secondAttribute="trailing" id="ct8-WI-F6o"/>
+                                    <constraint firstAttribute="height" constant="45" id="j2P-YD-xnY"/>
+                                    <constraint firstItem="SDf-7J-Am9" firstAttribute="width" secondItem="hEa-fI-erS" secondAttribute="width" id="w1C-hj-Q5v"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLZ-2L-Np6">
+                                <rect key="frame" x="35.5" y="586" width="304" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="JWf-PN-sUz"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="By accessing your account, you agree to our Terms conditions and Privacy Policy">
+                                        <attributes>
+                                            <color key="NSColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6W-Ks-bJN">
+                                <rect key="frame" x="40" y="252.5" width="295" height="293.5"/>
+                                <connections>
+                                    <segue destination="J65-C1-EpQ" kind="embed" id="k5Z-Qq-Ibd"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Q7g-VK-wtg" firstAttribute="centerX" secondItem="jwG-8s-xcx" secondAttribute="centerX" id="0sH-uO-UcE"/>
+                            <constraint firstItem="z6W-Ks-bJN" firstAttribute="leading" secondItem="jwG-8s-xcx" secondAttribute="leading" constant="40" id="58S-z1-Cgn"/>
+                            <constraint firstItem="qLZ-2L-Np6" firstAttribute="centerX" secondItem="jwG-8s-xcx" secondAttribute="centerX" id="5t1-u6-Kag"/>
+                            <constraint firstItem="Q7g-VK-wtg" firstAttribute="top" secondItem="G6o-X5-dvs" secondAttribute="bottom" constant="36" id="MIG-QA-EY4"/>
+                            <constraint firstItem="G6o-X5-dvs" firstAttribute="centerX" secondItem="jwG-8s-xcx" secondAttribute="centerX" id="cyl-wa-0ru"/>
+                            <constraint firstItem="z6W-Ks-bJN" firstAttribute="centerX" secondItem="jwG-8s-xcx" secondAttribute="centerX" id="gE6-Pu-kD4"/>
+                            <constraint firstItem="G6o-X5-dvs" firstAttribute="top" secondItem="jwG-8s-xcx" secondAttribute="top" constant="40" id="jnp-M2-hZA"/>
+                            <constraint firstItem="jwG-8s-xcx" firstAttribute="bottom" secondItem="qLZ-2L-Np6" secondAttribute="bottom" constant="40" id="ole-RF-x0g"/>
+                            <constraint firstItem="qLZ-2L-Np6" firstAttribute="top" secondItem="z6W-Ks-bJN" secondAttribute="bottom" constant="40" id="wVh-VJ-6yx"/>
+                            <constraint firstItem="z6W-Ks-bJN" firstAttribute="top" secondItem="Q7g-VK-wtg" secondAttribute="bottom" constant="60" id="z7A-wm-2dK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jwG-8s-xcx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Txi-1q-jYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.59999999999999" y="158.77061469265368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hLk-MV-cox">
+            <objects>
+                <viewController id="J65-C1-EpQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dCI-Cy-Sdk">
+                        <rect key="frame" x="0.0" y="0.0" width="295" height="293.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cw4-q9-Ljx" customClass="GradientButton" customModule="To_Do" customModuleProvider="target">
+                                <rect key="frame" x="62" y="241.5" width="171" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="DCR-En-byd"/>
+                                    <constraint firstAttribute="height" constant="52" id="Td7-Cd-orN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" name="ButtonShadowColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="topGradientColor">
+                                        <color key="value" name="TopGradientColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomGradientColor">
+                                        <color key="value" name="BottomGradientColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cw4-q9-Ljx" firstAttribute="centerX" secondItem="dCI-Cy-Sdk" secondAttribute="centerX" id="HB4-Dk-UcC"/>
+                            <constraint firstAttribute="bottom" secondItem="Cw4-q9-Ljx" secondAttribute="bottom" id="kcN-ZV-7Xf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FKc-Oj-u84"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzF-NU-fQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="222" y="705"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AuthScreenLogo" width="57" height="53"/>
+        <namedColor name="AccentDarkColor">
+            <color red="0.35686274509803922" green="0.34901960784313724" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BottomGradientColor">
+            <color red="0.67799997329711914" green="0.70599997043609619" blue="0.93699997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonShadowColor">
+            <color red="0.39215686274509803" green="0.57647058823529407" blue="0.6588235294117647" alpha="0.15999999642372131" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryTextColor">
+            <color red="0.73333333333333328" green="0.73333333333333328" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TopGradientColor">
+            <color red="0.49000000953674316" green="0.5220000147819519" blue="0.76499998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
